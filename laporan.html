@@ -247,22 +247,7 @@ td{
                         <th>rab</th>
                         <th>deskripsi</th>
                     </tr>
-                     <?php
-                        include "koneksi.php";
-                        $query = mysqli_query($koneksi, "SELECT * FROM pendaftaran");
-                        while ($data = mysqli_fetch_array($query)){
-                            
-                        
-                     ?>
-                     <tr>
-                            <td><?php echo $data['namaormawa']; ?></td>
-                            <td><?php echo $data['namakegiatan']; ?></td>
-                            <td><?php echo $data['mulai']; ?></td>
-                            <td><?php echo $data['akhir']; ?></td>
-                            <td><?php echo $data['undangan']; ?></td>
-                            <td><?php echo $data['rab']; ?></td>
-                            <td><?php echo $data['deskripsi']; }?></td><br>
-                        </tr>
+                    
                 </table>
                         
                     </div>

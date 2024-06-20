@@ -227,22 +227,6 @@
 </div>
 
 
-<?php
-
-include "koneksi.php";
-
-if(isset($_POST['register'])){
-    mysqli_query($koneksi,"insert into user_ormawa set
-    id = '$_POST[idormawa]',
-    nama = '$_POST[namaormawa]',
-    username = '$_POST[userormawa]',
-    password = '$_POST[passwordormawa]'");
-
-    echo "Telah tersimpan";
-}
-
-?>
-
 </body>
 </html>
 
